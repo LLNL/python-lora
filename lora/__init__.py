@@ -12,6 +12,7 @@ try:
 except NameError:
     pass
 
+
 class LoraSession(requests.Session):
     domain = 'https://lc.llnl.gov'
     login_prompt = 'Pin & Token: '
@@ -933,6 +934,7 @@ class LoraSession(requests.Session):
         """
         response = self.get(self.build_url('clusters', 'batchdetails'))
         return response.json()
+
 
 class RZLoraSession(LoraSession):
     domain = 'https://rzlc.llnl.gov'

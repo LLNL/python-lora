@@ -194,61 +194,61 @@ if __name__ == '__main__':
     test_endpoint(session.giveMyFiles('~/notes', 'choatea'))
     test_endpoint(session.giveMyFiles(['~/notes, ~/tmpfile'], ['choatea', 'choatez']))
 
-    print ('\n-- Get User SSH hosts --')
+    print('\n-- Get User SSH hosts --')
     test_endpoint(session.getUserSshHosts())
     test_endpoint(session.getUserSshHosts('jwlong'))
 
-    print ('\n-- Get bank membership --')
+    print('\n-- Get bank membership --')
     test_endpoint(session.getBankMembership('lc', 'cab'))
 
-    print ('\n-- Get scratch filesystems --')
+    print('\n-- Get scratch filesystems --')
     test_endpoint(session.getScratchFilesystems())
 
-    print ('\n-- Get parallel filesystems --')
+    print('\n-- Get parallel filesystems --')
     test_endpoint(session.getParallelFilesystems())
 
-    print ('\n-- Get my purged files --')
+    print('\n-- Get my purged files --')
     test_endpoint(session.getMyPurgedFiles())
     test_endpoint(session.getMyPurgedFiles(3))
 
     print('\n-- Get all users --')
     test_endpoint(session.getAllUsers())
 
-    print ('\n-- Get all users info --')
+    print('\n-- Get all users info --')
     test_endpoint(session.getAllUsersInfo())
     test_endpoint(session.getAllUsersInfo('array'))
 
-    print ('\n-- Is user in group --')
+    print('\n-- Is user in group --')
     test_endpoint(session.isUserInGroup('hotline'))
     test_endpoint(session.isUserInGroup('hotline', 'lee1001'))
 
-    print ('\n-- Get user POC contactees --')
+    print('\n-- Get user POC contactees --')
     test_endpoint(session.getUserPocContactees('long6'))
 
-    print ('\n-- Get file url --')
+    print('\n-- Get file url --')
     test_endpoint(session.getFileUrl('cab', '/g/g0/choate5/notes'))
 
-    print ('\n-- Get directory listing --')
+    print('\n-- Get directory listing --')
     test_endpoint(session.getDirListing('cab', '/g/g0/choate5/test'))
 
-    print ('\n-- Get user transfer hosts --')
+    print('\n-- Get user transfer hosts --')
     test_endpoint(session.getUserTransferHosts())
     test_endpoint(session.getUserTransferHosts('choatez'))
 
-    print ('\n-- Get network info --')
+    print('\n-- Get network info --')
     test_endpoint(session.getNetworkInfo())
 
-    print ('\n-- Get machine statuses --')
+    print('\n-- Get machine statuses --')
     test_endpoint(session.getMachineStatus())
 
-    print ('\n-- Get user enclave status --')
+    print('\n-- Get user enclave status --')
     test_endpoint(session.getUserEnclaveStatus())
     test_endpoint(session.getUserEnclaveStatus('choatea'))
 
-    print ('\n-- Read file --')
+    print('\n-- Read file --')
     test_endpoint(session.readFile('cab', '/g/g0/choate5/notes'))
 
-    print ('\n-- Get lustre nickname --')
+    print('\n-- Get lustre nickname --')
     test_endpoint(session.getLustreNickname())
     test_endpoint(session.getLustreNickname('lscratche'))
 
