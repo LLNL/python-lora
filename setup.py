@@ -3,10 +3,11 @@
 
 from setuptools import setup, find_packages
 
+from lora import __version__
 
 setup(
     name='lora',
-    version='0.3.0',
+    version=__version__,
     description='Package for interacting with Lorenz REST API',
     author='Ian Lee',
     author_email='lee1001@llnl.gov',

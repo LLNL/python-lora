@@ -4,6 +4,7 @@ import requests
 
 logger = logging.getLogger(__file__)
 
+__version__ = '0.4.0-dev'
 __url_cache__ = {}
 
 try:
